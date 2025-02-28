@@ -11,7 +11,7 @@ The dataset consists of **bank credit card customer data** with the following at
 - **Behavioral Data**: Number of Inquiries, Credit Utilization, Payment Delays, etc.
 - **Target Variable**: `Attrition_Flag` (1 = Churned, 0 = Retained)
 
-### ** Sample Data Structure**
+###  Sample Data Structure
 | Customer ID | Age | Credit Limit | Transactions | Churn |
 |-------------|----|--------------|-------------|-------|
 | CUST001     | 45 | $15,000      | 120         | Yes   |
@@ -22,20 +22,20 @@ The dataset consists of **bank credit card customer data** with the following at
 ## EDA Insights (Graphs & Key Findings)
 Before applying machine learning models, an **Exploratory Data Analysis (EDA)** was performed to extract valuable insights:
 
-### ** Churn Rate Distribution**
+###  Churn Rate Distribution
 - The dataset is imbalanced, with fewer customers churning.
 - **Older customers** tend to churn more often.
 - Customers with **higher credit utilization** show a higher churn rate.
 
 ![Churn Distribution](path/to/churn_distribution.png)
 
-### ** Transaction Frequency vs Churn**
+###  Transaction Frequency vs Churn
 - Customers with **fewer transactions per month** are more likely to churn.
 - Engaged customers (high transaction count) have a lower churn rate.
 
 ![Transaction Patterns](path/to/transaction_patterns.png)
 
-### ** Feature Importance**
+###  Feature Importance
 - The most influential features in predicting churn:
   - **Credit Utilization**
   - **Total Transactions**
@@ -47,26 +47,26 @@ Before applying machine learning models, an **Exploratory Data Analysis (EDA)** 
 ---
 
 ## Machine Learning Approach
-### ** Data Preprocessing**
-- **Handling Missing Values**
-- **Encoding Categorical Features**
-- **Feature Scaling (Standardization)**
+### Data Preprocessing
+- Handling Missing Values
+- Encoding Categorical Features
+- Feature Scaling (Standardization)
 
-### ** Models Used**
+###  Models Used
 Three machine learning models were trained and evaluated:
 
 | Model | Description |
 |--------|------------|
-| **Logistic Regression** | Simple baseline model for binary classification. |
-| **Gaussian Naïve Bayes** | Probabilistic model handling categorical data. |
-| **ARIMA** | Time-series forecasting for churn trends. |
+| Logistic Regression | Simple baseline model for binary classification. |
+| Gaussian Naïve Bayes | Probabilistic model handling categorical data. |
+| ARIMA | Time-series forecasting for churn trends. |
 
-### ** Model Evaluation**
+###  Model Evaluation
 Metrics used for evaluation:
-- **Accuracy**
-- **Confusion Matrix**
-- **Precision, Recall, F1-Score**
-- **ROC Curve**
+- Accuracy
+- Confusion Matrix
+- Precision, Recall, F1-Score
+- ROC Curve
 
 ---
 
@@ -77,16 +77,16 @@ Metrics used for evaluation:
 | Naïve Bayes | 83% | 80% | 78% | 79% |
 | ARIMA Forecast | N/A | N/A | N/A | N/A |
 
-### **ROC Curve**
+### ROC Curve
 ![ROC Curve](path/to/roc_curve.png)
 
 ---
 
 ## Business Insights & Recommendations
- **Identify High-Risk Customers**: Focus on customers with low transaction activity and high credit utilization.  
- **Offer Personalized Incentives**: Provide loyalty rewards or lower interest rates to retain customers.  
- **Proactive Communication**: Use automated alerts to notify at-risk customers.  
- **Leverage ARIMA Forecasting**: Prepare marketing campaigns in advance for predicted churn periods.  
+ Identify High-Risk Customers: Focus on customers with low transaction activity and high credit utilization.  
+ Offer Personalized Incentives: Provide loyalty rewards or lower interest rates to retain customers.  
+ *Proactive Communication: Use automated alerts to notify at-risk customers.  
+ Leverage ARIMA Forecasting: Prepare marketing campaigns in advance for predicted churn periods.  
 
 ---
 
