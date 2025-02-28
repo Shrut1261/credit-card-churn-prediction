@@ -22,20 +22,20 @@ The dataset consists of **bank credit card customer data** with the following at
 ## EDA Insights (Graphs & Key Findings)
 Before applying machine learning models, an **Exploratory Data Analysis (EDA)** was performed to extract valuable insights:
 
-### **1️⃣ Churn Rate Distribution**
+### ** Churn Rate Distribution**
 - The dataset is imbalanced, with fewer customers churning.
 - **Older customers** tend to churn more often.
 - Customers with **higher credit utilization** show a higher churn rate.
 
 ![Churn Distribution](path/to/churn_distribution.png)
 
-### **2️⃣ Transaction Frequency vs Churn**
+### ** Transaction Frequency vs Churn**
 - Customers with **fewer transactions per month** are more likely to churn.
 - Engaged customers (high transaction count) have a lower churn rate.
 
 ![Transaction Patterns](path/to/transaction_patterns.png)
 
-### **3️⃣ Feature Importance**
+### ** Feature Importance**
 - The most influential features in predicting churn:
   - **Credit Utilization**
   - **Total Transactions**
@@ -47,12 +47,12 @@ Before applying machine learning models, an **Exploratory Data Analysis (EDA)** 
 ---
 
 ## Machine Learning Approach
-### **1️⃣ Data Preprocessing**
+### ** Data Preprocessing**
 - **Handling Missing Values**
 - **Encoding Categorical Features**
 - **Feature Scaling (Standardization)**
 
-### **2️⃣ Models Used**
+### ** Models Used**
 Three machine learning models were trained and evaluated:
 
 | Model | Description |
@@ -61,7 +61,7 @@ Three machine learning models were trained and evaluated:
 | **Gaussian Naïve Bayes** | Probabilistic model handling categorical data. |
 | **ARIMA** | Time-series forecasting for churn trends. |
 
-### **3️⃣ Model Evaluation**
+### ** Model Evaluation**
 Metrics used for evaluation:
 - **Accuracy**
 - **Confusion Matrix**
@@ -70,7 +70,7 @@ Metrics used for evaluation:
 
 ---
 
-## 📈 Model Performance
+##  Model Performance
 | Model | Accuracy | Precision | Recall | F1-Score |
 |--------|----------|-----------|--------|----------|
 | Logistic Regression | 85% | 82% | 80% | 81% |
@@ -83,15 +83,15 @@ Metrics used for evaluation:
 ---
 
 ## Business Insights & Recommendations
-1️⃣ **Identify High-Risk Customers**: Focus on customers with low transaction activity and high credit utilization.  
-2️⃣ **Offer Personalized Incentives**: Provide loyalty rewards or lower interest rates to retain customers.  
-3️⃣ **Proactive Communication**: Use automated alerts to notify at-risk customers.  
-4️⃣ **Leverage ARIMA Forecasting**: Prepare marketing campaigns in advance for predicted churn periods.  
+ **Identify High-Risk Customers**: Focus on customers with low transaction activity and high credit utilization.  
+ **Offer Personalized Incentives**: Provide loyalty rewards or lower interest rates to retain customers.  
+ **Proactive Communication**: Use automated alerts to notify at-risk customers.  
+ **Leverage ARIMA Forecasting**: Prepare marketing campaigns in advance for predicted churn periods.  
 
 ---
 
 ## ⚙️ How to Run the Code
-### **1️⃣Clone the Repository**
+### **Clone the Repository**
 ```bash
 git clone https://github.com/your-username/Credit-Card-Churn-Prediction.git
 cd Credit-Card-Churn-Prediction
